@@ -1,0 +1,138 @@
+{% load static from staticfiles %}
+{% load google_analytics %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Etiquetas compartir redes sociales -->
+    <html prefix="og: http://ogp.me/ns#">
+ 
+    <!-- Open Graph -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Vender a través de las redes sociales nunca antes fue tan fácil. Convierte completos desconocidos en clientes frecuentes y clientes en verdaderos fans.">
+    <meta name="Keywords" content="Vender a través de las redes sociales">
+    
+
+    <title>{% block title %}Busca tu servicio | {{company}}{%endblock%}</title>
+    
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="{% static 'common/img/favicon.png' %}" />
+
+    <link href="{% static 'inspinia2/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'inspinia2/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'inspinia2/css/animate.css' %}" rel="stylesheet">
+    <link href="{% static 'inspinia2/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'common/css/vertical-align.css' %}" rel="stylesheet">
+    <link href="{% static 'home/css/index.css' %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Assistant:800" rel="stylesheet">
+    {% block head %}
+    <!-- Sweet Alert -->
+    <link href="{% static 'inspinia2/css/plugins/sweetalert/sweetalert.css' %}" rel="stylesheet">
+
+    {% endblock %}
+    {% load google_analytics %}
+</head>
+<body id="page-top"  class="landing-page bg-search skin-1">
+    {% block navbar %}
+    <div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar text-white"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+
+                    </button>
+                    <!--<a class="navbar-brand" href="#page-top"><img src="{% static 'common/img/logo.png' %}" style="height: 16px; width: 36px;"></a>-->
+                </div>
+                <div id="navbar" class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll ingresar" data-toggle="modal" data-target="#myModal6">Cancelar Turno</a></li>
+                        <!--<li><a class="page-scroll ingresar" href="{% url 'turn_new' %}">Dar turnos online</a></li>-->
+                        <li><a class="page-scroll ingresar" href="{% url 'login_page' %}">Ingresar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    {% include 'turn_cancel_form.html' %}
+    {% endblock %}
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row ">
+            <div class="col-lg-12 ">
+                <div {% block center %} class="middle-box" {% endblock %} style="min-width: 70%; ">
+                    <div class="text-center">
+                        {% block form %}
+                        <h1 class="autoturno">{{company}}</h1>
+                        <!--<h4 class="text-white description m-b-md">Encontra tu profesional médico, peluqueria o cancha de tu deporte favorito. <br>Pedi gratis tu turno online.</h4>-->
+                        <h4 class="text-white description m-b-md">Buscá tu turno fácilmente</h4>
+                        <div class="search-form col-lg-8 col-lg-offset-2">
+
+                            <form action="{%url 'index' %}" method="get">
+                                {% csrf_token %}
+                                <div class="input-group">
+                                    <div class="input-group-btn">
+                                        <input type="search" placeholder="Buscar.." name="q" class="form-control input-lg search
+                                        typeahead_1" style="border-radius: 3px" autocomplete="off">
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                        {%endblock%}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="profesional text-center">
+        {% block footer %}
+            <!--<a href="{% url 'turn_new' %}"><span class="text-white profesional-hover">Quiero dar turnos online!</span></a>-->
+        {%endblock%}
+    </div>
+<!-- Mainly scripts  -->
+<script src="{% static 'inspinia2/js/jquery-2.1.1.js' %}"></script>
+<script src="{% static 'inspinia2/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'inspinia2/js/plugins/metisMenu/jquery.metisMenu.js' %} "></script>
+<!--Slimscroll-->
+<script src="{% static 'inspinia2/js/plugins/slimscroll/jquery.slimscroll.min.js' %}"></script>
+<!-- Custom and plugin javascript -->
+<script src="{% static 'inspinia2/js/inspinia.js' %}"></script>
+<script src="{% static 'inspinia2/js/plugins/pace/pace.min.js' %}"></script>
+
+
+{% block script %}
+    <script src="{% static 'inspinia2/js/plugins/sweetalert/sweetalert.min.js' %}"></script>
+    <script src="{% static 'turn/js/cancel_turn.js' %}"></script>
+    <!-- Typehead -->
+    <script src="{% static 'inspinia2/js/plugins/typehead/bootstrap3-typeahead.min.js' %}"></script>
+    <script>
+        $(document).ready(function(){
+            $('.typeahead_1').typeahead({
+                source: [  {%for entity in entitys%}
+                                "{{entity.get_name}}",
+                            {%endfor%}
+                            {%for service in services%}
+                                "{{service.get_name}}",
+                            {%endfor%}
+                            {%for type in type_entity%}
+                                "{{type.get_name}}",
+                            {%endfor%}
+                ],
+                items:5,
+
+            });
+
+        });
+    </script>
+
+{% endblock %}
+
+</body>
+</html>

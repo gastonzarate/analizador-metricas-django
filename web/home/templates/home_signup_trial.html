@@ -1,0 +1,9 @@
+{% extends 'home_signup.html'%}
+
+{% block titulo %}Crea tu cuenta{% endblock %}
+
+{% block next_google %}{% url 'signup_page_trial_social' pk_entity=pk_entity %}{% endblock %}
+{% block next_facebook %}{% url 'signup_page_trial_social' pk_entity=pk_entity %}{% endblock %}
+{% block next_twitter %}{% url 'signup_page_trial_social' pk_entity=pk_entity %}{% endblock %}
+
+{% block form_action %}{% url 'signup_page_trial' pk_entity=pk_entity %}{% endblock %}

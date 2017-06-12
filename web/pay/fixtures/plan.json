@@ -1,0 +1,30 @@
+[
+    {
+        "model": "pay.plan",
+        "fields": {
+            "name": "Free",
+            "description": "This plan is limited"
+        },
+        "pk": 1
+    },
+    {
+        "model": "pay.free",
+        "fields": {
+        },
+        "pk": 1
+    },
+    {
+        "model": "pay.plan",
+        "fields": {
+            "name": "Premium",
+            "description": "This plan is not limited"
+        },
+        "pk": 2
+    },
+    {
+        "model": "pay.premium",
+        "fields": {
+        },
+        "pk": 2
+    }
+]

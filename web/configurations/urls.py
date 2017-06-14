@@ -30,7 +30,8 @@ urlpatterns = [
     url(r'^accounts/', include('accounts.urls')),
     #My Apps
     url(r'^pay/',include('pay.urls')),
-    url(r'^blog/', include('blog.urls')),
+    url(r'campaign/',include('campaign.urls')),
+    url(r'metrics/',include('metrics.urls')),
     # Aws
     url(r'^s3direct/', include('s3direct.urls')),
     # App Home

@@ -25,24 +25,16 @@
 
     <div class="middle-box text-center animated fadeInDown">
         
-        <h2 class="font-bold" style="margin-bottom: 30px;">¡Felicidades tu cuenta es premium!</h2>
+        <h2 class="font-bold" style="margin-bottom: 30px;">¡Felicidades su campaña fué pagada correctamente!</h2>
 
         <div class="error-desc">
             
-        {% if user.is_active %}
 
         <div class="error-desc">
-            Ahora ya puedes empezar a disfrutar de todas las funcionalidades de Codipay </br>
-            <a href="{% url 'share_user_all' %}" class="btn btn-primary m-t">Ingresar</a>
+            Tu campaña se comenzara a ejecutar en unos momentos, te notificaremos por email.</br>
+            <a href="{% url 'campaign_all' %}" class="btn btn-success m-t">Mis campañas</a>
         </div>
 
-        {% else %}
-            
-        <div class="error-desc">
-            Verifica tu correo electronico para confirmar tu cuenta y asi poder disfrutar de todas las funcionalidades de {{company}}.</br>
-            <a href="{% url 'login_page' %}" class="btn btn-primary m-t">Ingresar</a>
-        </div>
-        {% endif %}
         </div>
     </div>
 

@@ -164,8 +164,7 @@ class LoginView(FormView):
     def get(self, request,**kwargs):
         user = request.user
         if user.is_authenticated:
-
-            return HttpResponseRedirect(reverse('turn_home'))
+            return HttpResponseRedirect(reverse('campaign_all'))
 
         return render(request,self.template_name,{'form':LoginForm()})
 
@@ -188,7 +187,7 @@ class LoginView(FormView):
         return super(LoginView, self).form_valid(form)
 
     def get_success_url(self):
-        return reverse('turn_home')
+        return reverse('campaign_all')
 
 
 class LogoutView(View):

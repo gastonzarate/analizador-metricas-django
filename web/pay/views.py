@@ -1,4 +1,5 @@
 from django.core.urlresolvers import reverse
+from django.http import Http404
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
@@ -7,12 +8,18 @@ import mercadopago
 import json
 from pay.models import Customer, Premium
 import os
+from campaign.models import Campaign, Pay
+
 
 class HomePayView(TemplateView):
     template_name = 'pay_plans.html'
 
 
-def buy_my_item(request):
+def buy_my_item(request,campaign_id):
+    campaign = Campaign.objects.get(id=campaign_id)
+
+    if campaign.get_user() != request.user:
+        raise Http404
 
     code = None
     description = None
@@ -21,26 +28,23 @@ def buy_my_item(request):
         mp = mercadopago.MP(os.environ.get('ACCESS_TOKEN_MP'))
 
         dic = {
-            "transaction_amount": 97,
+            "transaction_amount": campaign.get_budget(),
             "token": "%s" %request.POST.get('token',''),
             "installments": 1,
-            "description": "Crece",
+            "description": "Campaña",
             "payment_method_id": request.POST.get('paymentMethodId',''),
             "payer": {
-                "email": "codicero@gmail.com"
+                "email": os.environ.get("EMAIL_MP")
             },
             "external_reference": user.username,
-            "statement_descriptor": "CODIPAY - Año Premium",
+            "statement_descriptor": campaign.get_name(),
         }
         payment = mp.post("/v1/payments", dic )
         json.dumps(payment, indent=4)
 
         if payment['status'] == 201:
             if payment['response']['status'] == 'approved':
-                customer = Customer(user=user,plan=Premium.objects.all().first())
-                customer.save()
-                user.set_customer(customer)
-                user.save()
+                campaign.get_status().pay_out(campaign)
                 return HttpResponseRedirect(reverse('pay_return_url_premium'))
             else:
                 description = payment['response']['status']
@@ -49,7 +53,8 @@ def buy_my_item(request):
             code = payment['response']['cause'][0]['code']
             description = payment['response']['cause'][0]['description']
 
-    return render(request,'pay_payment.html',{'code':code,'description':description,'PUBLIC_KEY_MP': os.environ.get('PUBLIC_KEY_MP')})
+    return render(request,'pay_payment.html',{'code':code,'description':description,'PUBLIC_KEY_MP': os.environ.get('PUBLIC_KEY_MP'),
+                                              'campaign':campaign})
 
 
 @csrf_exempt

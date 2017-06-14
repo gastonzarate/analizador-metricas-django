@@ -44,9 +44,10 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     #Aplicaciones propias
     'accounts',
+    'campaign',
+    'metrics',
     'home',
     'pay',
-    'blog',
     #django-analytical
     'analytical',
     # Login social
@@ -81,13 +82,13 @@ TEMPLATES = [
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
-                'django.core.context_processors.csrf',
                 'django.contrib.auth.context_processors.auth',
                 'django.template.context_processors.debug',
                 'django.template.context_processors.i18n',
                 'django.template.context_processors.media',
                 'django.template.context_processors.request',
                 'django.template.context_processors.static',
+                'django.template.context_processors.csrf',
                 'django.contrib.messages.context_processors.messages',
                 'home.context_processors.dashboard',
                 'home.context_processors.site',

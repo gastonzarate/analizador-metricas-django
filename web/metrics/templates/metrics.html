@@ -1,0 +1,16 @@
+{% extends 'home_index.html' %}
+
+{%block staff%}active{%endblock%}
+{%block staff_in%}in{%endblock%}
+{%block select%}active{%endblock%}
+
+{%block here%}Metricas de {{campaign.get_name}}{% endblock%}
+
+{%block list_here %}
+<li>Metricas</li>
+<li class="active">{{campaign.get_name}}</li>
+{%endblock%}
+
+
+{%block contenido%}
+{%endblock%}

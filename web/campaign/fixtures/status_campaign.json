@@ -1,0 +1,61 @@
+[
+  {
+    "model":"campaign.statuscampaign",
+    "fields":{
+      "name":"Esperando pago",
+      "description":"Campaña creada, que todavia no ha finalizado"
+    },
+    "pk":1
+  },
+  {
+    "model":"campaign.waitingpay",
+    "fields":{
+
+    },
+    "pk":1
+  },
+  {
+    "model":"campaign.statuscampaign",
+    "fields":{
+      "name":"Funcionando",
+      "description":"Campaña creada y pagada, que esta en funcionamiento"
+    },
+    "pk":2
+  },
+  {
+    "model":"campaign.working",
+    "fields":{
+
+    },
+    "pk":2
+  },
+  {
+    "model":"campaign.statuscampaign",
+    "fields":{
+      "name":"Pagada",
+      "description":"Campaña pagada, que todavia esta en funcionamiento"
+    },
+    "pk":3
+  },
+  {
+    "model":"campaign.pay",
+    "fields":{
+
+    },
+    "pk":3
+  },
+  {
+    "model":"campaign.statuscampaign",
+    "fields":{
+      "name":"Terminada",
+      "description":"Campaña que ha finalizado luego de agotar su presupuesto"
+    },
+    "pk":4
+  },
+  {
+    "model":"campaign.end",
+    "fields":{
+    },
+    "pk":4
+  }
+]

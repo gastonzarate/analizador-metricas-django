@@ -27,11 +27,11 @@ def email_verify_password(code,user):
 
 
 def email_welcome(user):
-    context = {'name': user.get_first_name(),'url_panel':  Site.objects.get_current().domain + reverse('turn_all'),
+    context = {'name': user.get_first_name(),'url_panel':  Site.objects.get_current().domain + reverse('campaign_all'),
                'company':os.environ.get("COMPANY","")}
 
     message_html = get_template("email/home_welcome.html").render(context)
-    subject = "Hola " + user.get_first_name() + ". Te damos la bienvenida a Codipay."
+    subject = "Hola " + user.get_first_name() + ". Te damos la bienvenida a "+ os.environ.get("COMPANY","") + "."
     message = get_template("email/home_welcome.txt").render(context)
 
     send_email_hola(email=user.email, subject=subject,message=message, message_html=message_html)

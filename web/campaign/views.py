@@ -16,6 +16,7 @@ def CampaignNew(request):
             if form.cleaned_data["budget"] >= 500:
                 campaign = form.save(commit=False)
                 campaign.set_user(request.user)
+                assert False
                 campaign.save()
                 return HttpResponseRedirect(reverse('pay_payment',kwargs={'campaign_id':campaign.id}))
             else:

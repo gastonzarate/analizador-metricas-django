@@ -9,7 +9,6 @@ from django.contrib.auth.models import PermissionsMixin
 from django.utils import timezone
 from s3direct.fields import S3DirectField
 from home.emails import email_welcome
-from pay.models import Customer, Free
 
 
 def _generate_code():
@@ -72,7 +71,6 @@ class MyUser(AbstractBaseUser, PermissionsMixin):
     receive_newsletter = models.BooleanField(_('receive newsletter'), default=False)
     photo = S3DirectField(dest=os.environ.get('AWS_STORAGE_BUCKET_NAME'), blank=True,null=True)
     verify_email = models.NullBooleanField(default=True,blank=True,null=True)
-    customer = models.OneToOneField(Customer,blank=True,null=True)
     subscribe_email = models.NullBooleanField(default=True,blank=True,null=True)
 
     USERNAME_FIELD = 'username'
@@ -118,16 +116,6 @@ class MyUser(AbstractBaseUser, PermissionsMixin):
 
     def set_is_active(self,is_active):
         self.is_active = is_active
-
-    def get_name_plan(self):
-        if self.get_plan() == None or self.get_plan().is_free():
-            return "Cuenta Gratuita"
-        else:
-            return "Cuenta Premium"
-
-    def get_plan(self):
-        return (self.get_customer().get_plan() if self.get_customer() != None  else Free.objects.all().first())
-
 
     def get_email(self):
         return self.email

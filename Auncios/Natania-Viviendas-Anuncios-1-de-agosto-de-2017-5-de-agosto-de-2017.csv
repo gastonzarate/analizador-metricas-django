@@ -1,0 +1,5 @@
+"Inicio del informe","Fin del informe","Nombre del anuncio",Entrega,Resultados,"Indicador de resultado",Alcance,"Costo por resultados","Importe gastado (ARS)","Puntuación de relevancia",Frecuencia,Impresiones,"Clics únicos en el enlace","Registros completados en el sitio web","Clics en el botón"
+2017-08-01,2017-08-05,Adquisicion_N1_Mendoza_C,active,46,actions:link_click,2142,1.4615217391304,67.23,4,1.0345471521942,2216,42,1,18
+2017-08-01,2017-08-05,Adquisicion_N1_Mendoza_D,active,228,actions:link_click,7782,1.3999122807018,319.18,4,1.0961192495502,8530,209,7,81
+2017-08-01,2017-08-05,Adquisicion_N1_Mendoza_B,active,41,actions:link_click,2214,1.4548780487805,59.65,4,1.0397470641373,2302,40,2,17
+2017-08-01,2017-08-05,Adquisicion_N1_Mendoza_A,active,138,actions:link_click,5074,1.3894927536232,191.75,5,1.0719353567205,5439,122,,43

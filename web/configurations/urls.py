@@ -19,6 +19,9 @@ from django.contrib import admin
 from django.views.generic import TemplateView
 
 from django.views.static import serve
+
+from analytics.views import Csv
+
 handler404 = 'home.views.handler404'
 
 urlpatterns = [
@@ -29,12 +32,12 @@ urlpatterns = [
     #Auth Email
     url(r'^accounts/', include('accounts.urls')),
     #My Apps
-    url(r'^pay/',include('pay.urls')),
-    url(r'campaign/',include('campaign.urls')),
-    url(r'metrics/',include('metrics.urls')),
+    # url(r'^pay/',include('pay.urls')),
+    # url(r'campaign/',include('campaign.urls')),
+    # url(r'metrics/',include('metrics.urls')),
     # Aws
     url(r'^s3direct/', include('s3direct.urls')),
     # App Home
-    url(r'^$', TemplateView.as_view(template_name='index.html'), name='index'),
-    url(r'^',  include('home.urls')),
+    url(r'^$', Csv, name='index'),
+    # url(r'^',  include('home.urls')),
             ]

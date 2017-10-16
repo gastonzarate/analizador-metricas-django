@@ -1,0 +1,13 @@
+"Inicio del informe","Fin del informe","Nombre del conjunto de anuncios",Entrega,Resultados,"Indicador de resultado",Alcance,"Costo por resultados",Presupuesto,"Tipo de presupuesto","Importe gastado (ARS)",Finalización,Inicio,Frecuencia,Impresiones,"Clics únicos en el enlace","Registros completados en el sitio web","Clics en el botón"
+2017-08-01,2017-08-12,"(AR) N1_Neuquén",active,1694,actions:link_click,52680,2.5993329397875,1000,Diario,4403.27,"En curso",2017-08-03,2.3635155656796,124510,1463,26,558
+2017-08-01,2017-08-12,"(AR) N1_Salta",active,1319,actions:link_click,34950,1.3956937073541,500,Diario,1840.92,"En curso",2017-08-03,1.7993419170243,62887,1081,19,438
+2017-08-01,2017-08-12,"(AR) N1_Tucuman",active,1119,actions:link_click,34172,1.4208668453977,250,Diario,1589.95,"En curso",2017-08-03,1.6673007140349,56975,920,9,373
+2017-08-01,2017-08-12,"(AR) N1_San_Juan",active,625,actions:link_click,19865,2.548048,250,Diario,1592.53,"En curso",2017-08-03,2.2547193556506,44790,519,3,223
+2017-08-01,2017-08-12,"(AR) N1_Chubut",active,845,actions:link_click,23705,1.9070650887574,250,Diario,1611.47,"En curso",2017-08-03,2.0669479012866,48997,692,11,285
+2017-08-01,2017-08-12,"(AR) N1_Mendoza",active,2843,actions:link_click,75763,1.9228561378825,2000,Diario,5466.68,"En curso",2017-08-03,1.8749257553159,142050,2444,24,859
+2017-08-01,2017-08-12,"(AR) N1_Jujuy",active,1320,actions:link_click,27496,1.1996893939394,250,Diario,1583.59,"En curso",2017-08-03,2.0064372999709,55169,1067,17,464
+2017-08-01,2017-08-12,(AR)_Valle_Cercano_CBA,active,3656,actions:link_click,106831,1.6292067833698,2000,Diario,5956.38,"En curso",2017-08-04,1.6679709073209,178191,3212,29,1196
+2017-08-01,2017-08-12,(AR)_Valle_Cercano_Santa_Cruz,active,1147,actions:link_click,32409,1.7198169136879,500,Diario,1972.63,"En curso",2017-08-05,2.151655404363,69733,959,10,377
+2017-08-01,2017-08-12,"(AR) N1_Amplio",inactive,7519,actions:link_click,162990,0.80934166777497,2000,Diario,6085.44,"En curso",2017-08-02,1.2521013559114,204080,6400,48,2732
+2017-08-01,2017-08-12,(AR)_Valle_Cercano_Ushuaia,inactive,364,actions:link_click,12639,4.2202472527473,500,Diario,1536.17,"En curso",2017-08-05,2.32747843975,29417,306,1,124
+2017-08-01,2017-08-12,(AR)_Valle_Cercano_Rio_Grande,inactive,400,actions:link_click,13455,3.067175,500,Diario,1226.87,"En curso",2017-08-05,2.0588628762542,27702,337,,130

@@ -1,0 +1,342 @@
+{% extends 'home_index.html' %}
+{%load staticfiles %}
+{%load poll_extras%}
+
+
+{% block head %}
+    {{block.super}}
+
+{% endblock %}
+
+{%block metrics%} active {%endblock%}
+
+{%block here %}Métricas{%endblock%}
+
+{%block list_here%}
+<li>Metricas</li>
+<li class="active">{{campaign.get_name}}</li>
+{%endblock%}
+
+{% block contenido %}
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <h1>{{title}}</h1>
+            <h3>{{social_network}}</h3>
+        </div>
+    </div>
+    <div class="row">
+         <div class="col-xs-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Conclusion</h5>
+
+                </div>
+                <div class="ibox-content">
+                    <div>
+                        <canvas id="doughnutChart" height="140"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>CPI (Costo por impresion)</h5>
+                </div>
+                <div class="ibox-content">
+                    <div>
+                        <canvas id="cpi"></canvas>
+                    </div>
+                    <p>El minimo costo por impresion corresponde a {{min_cpi_ads}} con {{min_cpi}}.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>CPC (Costo por click)</h5>
+                </div>
+                <div class="ibox-content">
+                    <div>
+                        <canvas id="cpc"></canvas>
+                    </div>
+                    <p>El minimo costo por click corresponde a {{min_cpc_ads}} con {{min_cpc}}.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>CPSingup (Costo por Registro) </h5>
+                </div>
+                <div class="ibox-content">
+                    <div>
+                        <canvas id="cpsingup"></canvas>
+                    </div>Registro
+                    <p>El minimo costo por registro corresponde a {{min_cpsingup_ads}} con {{min_cpsingup}}.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>CPA (Costo por activacion)</h5>
+                </div>
+                <div class="ibox-content">
+                    <div>
+                        <canvas id="cpa"></canvas>
+                    </div>
+                    <p>El minimo costo por activacion corresponde a {{min_cpa_ads}} con {{min_cpa}}.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>ROAS (Retorno de inversion publicitaria)</h5>
+                </div>
+                <div class="ibox-content">
+                    <div>
+                        <canvas id="roas"></canvas>
+                    </div>
+                    <p>El maximo ROAS corresponde a {{max_roas_ads}} con {{max_roas}}.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Ingresos por Conversion</h5>
+                </div>
+                <div class="ibox-content">
+                    <div>
+                        <canvas id="conversion_income"></canvas>
+                    </div>
+                    <p>El maximo ingreso por conversion corresponde a {{max_conversion_income_ads}} con {{max_conversion_income}}.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Metricas Basicas</h5>
+                </div>
+                <div class="ibox-content">
+                    <div>
+                        <canvas id="barChart" height="140"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Datos</h5>
+                </div>
+                <div class="ibox-content">
+
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Impresiones</th>
+                            <th>Clicks</th>
+                            <th>Registros</th>
+                            <th>Conversiones</th>
+                            <th>Gastado</th>
+                            <th>Ingresos</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for ads in ads_dict%}
+                        <tr>
+                            <td><span style="background-color:rgba({%rgb num=forloop.counter%},0.5);">{{ads}}</span></td>
+                            <td>{%indice dic=ads_dict name=ads item="impressions"%}</td>
+                            <td>{%indice dic=ads_dict name=ads item="clicks"%}</td>
+                            <td>{%indice dic=ads_dict name=ads item="singups"%}</td>
+                            <td>{%indice dic=ads_dict name=ads item="conversions"%}</td>
+                            <td>{%indice dic=ads_dict name=ads item="spend"%}</td>
+                            <td>{%indice dic=ads_dict name=ads item="revenues"%}</td>
+                        </tr>
+                        {%endfor%}
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{%block javascript_custom %}
+<!-- ChartJS-->
+<script src="{% static 'inspinia2/js/plugins/chartJs/Chart.min.js'%}"></script>
+<script>
+    $(document).ready(function(){
+
+        var doughnutData = {
+            labels: [{% for p in prom%}"{{p}}",{%endfor%}],
+            datasets: [{
+                data: [{% for p in prom%}{% indice_sim dic=prom item=p%},{%endfor%}],
+                backgroundColor: [{% for p in prom%}"rgba({%rgb num=forloop.counter %}, 0.5)",{%endfor%}]
+            }]
+        };
+
+        var doughnutOptions = {
+            responsive: true
+        };
+
+
+        var ctx4 = document.getElementById("doughnutChart").getContext("2d");
+        new Chart(ctx4, {type: 'doughnut', data: doughnutData, options:doughnutOptions});
+
+
+        var barData = {
+            labels: ["Clicks/Impresiones", "Registros/Impresiones", "Conversiones/Impresiones", "Conversiones/Clicks"],
+            datasets: [
+            {% for ads in ads_dict%}
+                {
+                    label: "{{ads}}",
+                    backgroundColor: 'rgba({%rgb num=forloop.counter %}, 0.5)',
+                    borderColor: "rgba({% rgb_border num=forloop.counter %},0.5)",
+                    pointBorderColor: "#fff",
+                    data: [{%indice dic=ads_dict name=ads item="clicks_impressions"%},{%indice dic=ads_dict name=ads item="singups_impressions"%},
+                        {%indice dic=ads_dict name=ads item="conversions_impressions"%},{%indice dic=ads_dict name=ads item="conversions_clicks"%}]
+                },
+            {%endfor%}
+            ]
+        };
+
+        var barOptions = {
+            responsive: true
+        };
+
+        var ctx2 = document.getElementById("barChart").getContext("2d");
+        new Chart(ctx2, {type: 'bar', data: barData, options:barOptions});
+
+
+        var radarData = {
+            labels: ["CPI"],
+            datasets: [
+                {% for ads in ads_dict%}
+                {
+                    label: "{{ads}}",
+                    backgroundColor: 'rgba({%rgb num=forloop.counter %}, 0.5)',
+                    borderColor: "rgba({% rgb_border num=forloop.counter %},0.5)",
+                    data: [{%indice dic=ads_dict name=ads item="cpi"%}]
+                },
+                {%endfor%}
+                ]
+            };
+
+         var radarOptions = {
+            responsive: true
+         };
+
+
+
+        var ctx5 = document.getElementById("cpi").getContext("2d");
+        new Chart(ctx5, {type: 'bar', data: radarData, options:radarOptions});
+
+        var radarData = {
+            labels: ["CPC"],
+            datasets: [
+                {% for ads in ads_dict%}
+                {
+                    label: "{{ads}}",
+                    backgroundColor: 'rgba({%rgb num=forloop.counter %}, 0.5)',
+                    borderColor: "rgba({% rgb_border num=forloop.counter %},0.5)",
+                    data: [{%indice dic=ads_dict name=ads item="cpc"%}]
+                },
+                {%endfor%}
+                ]
+            };
+
+
+        var ctx5 = document.getElementById("cpc").getContext("2d");
+        new Chart(ctx5, {type: 'bar', data: radarData, options:radarOptions});
+
+        var radarData = {
+            labels: ["CPSingups"],
+            datasets: [
+                {% for ads in ads_dict%}
+                {
+                    label: "{{ads}}",
+                    backgroundColor: 'rgba({%rgb num=forloop.counter %}, 0.5)',
+                    borderColor: "rgba({% rgb_border num=forloop.counter %},0.5)",
+                    data: [{%indice dic=ads_dict name=ads item="cpsingups"%}]
+                },
+                {%endfor%}
+                ]
+            };
+
+
+        var ctx5 = document.getElementById("cpsingup").getContext("2d");
+        new Chart(ctx5, {type: 'bar', data: radarData, options:radarOptions});
+
+        var radarData = {
+            labels: ["CPA"],
+            datasets: [
+                {% for ads in ads_dict%}
+                {
+                    label: "{{ads}}",
+                    backgroundColor: 'rgba({%rgb num=forloop.counter %}, 0.5)',
+                    borderColor: "rgba({% rgb_border num=forloop.counter %},0.5)",
+                    data: [{%indice dic=ads_dict name=ads item="cpa"%}]
+                },
+                {%endfor%}
+                ]
+            };
+
+        var ctx5 = document.getElementById("cpa").getContext("2d");
+        new Chart(ctx5, {type: 'bar', data: radarData, options:radarOptions});
+
+        var radarData = {
+            labels: ["ROAS"],
+            datasets: [
+                {% for ads in ads_dict%}
+                {
+                    label: "{{ads}}",
+                    backgroundColor: 'rgba({%rgb num=forloop.counter %}, 0.5)',
+                    borderColor: "rgba({% rgb_border num=forloop.counter %},0.5)",
+                    data: [{%indice dic=ads_dict name=ads item="roas"%}]
+                },
+                {%endfor%}
+                ]
+            };
+
+        var ctx5 = document.getElementById("roas").getContext("2d");
+        new Chart(ctx5, {type: 'bar', data: radarData, options:radarOptions});
+
+        var radarData = {
+            labels: ["Ingresos por conversion"],
+            datasets: [
+                {% for ads in ads_dict%}
+                {
+                    label: "{{ads}}",
+                    backgroundColor: 'rgba({%rgb num=forloop.counter %}, 0.5)',
+                    borderColor: "rgba({% rgb_border num=forloop.counter %},0.5)",
+                    data: [{%indice dic=ads_dict name=ads item="conversion_income"%}]
+                },
+                {%endfor%}
+                ]
+            };
+
+        var ctx5 = document.getElementById("conversion_income").getContext("2d");
+        new Chart(ctx5, {type: 'bar', data: radarData, options:radarOptions});
+
+    });
+</script>
+{% endblock %}

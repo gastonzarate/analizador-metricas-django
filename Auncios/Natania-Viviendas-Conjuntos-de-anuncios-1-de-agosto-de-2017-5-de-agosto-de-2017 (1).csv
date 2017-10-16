@@ -1,0 +1,11 @@
+"Inicio del informe","Fin del informe","Nombre del conjunto de anuncios",Entrega,Resultados,"Indicador de resultado",Alcance,"Costo por resultados",Presupuesto,"Tipo de presupuesto","Importe gastado (ARS)",Finalización,Inicio,Frecuencia,Impresiones,"Clics únicos en el enlace","Registros completados en el sitio web","Clics en el botón"
+2017-08-01,2017-08-05,"(AR) N1_Amplio",active,7188,actions:link_click,156832,0.80849749582638,2000,Diario,5811.48,"En curso",2017-08-02,1.2423867578045,194846,6172,46,2630
+2017-08-01,2017-08-05,"(AR) N1_Neuquén",active,350,actions:link_click,15053,1.9048857142857,500,Diario,666.71,"En curso",2017-08-03,1.3399986713612,20171,314,7,129
+2017-08-01,2017-08-05,"(AR) N1_Salta",active,483,actions:link_click,16236,1.126066252588,250,Diario,543.89,"En curso",2017-08-03,1.2782705099778,20754,407,6,168
+2017-08-01,2017-08-05,"(AR) N1_Tucuman",active,377,actions:link_click,15643,1.4684880636605,250,Diario,553.62,"En curso",2017-08-03,1.2557693537045,19644,327,3,139
+2017-08-01,2017-08-05,"(AR) N1_San_Juan",active,223,actions:link_click,10028,2.4560538116592,250,Diario,547.7,"En curso",2017-08-03,1.4986039090546,15028,196,2,79
+2017-08-01,2017-08-05,"(AR) N1_Chubut",active,313,actions:link_click,11122,1.7186900958466,250,Diario,537.95,"En curso",2017-08-03,1.3843733141521,15397,274,4,101
+2017-08-01,2017-08-05,"(AR) N1_Mendoza",active,452,actions:link_click,14440,1.4110840707965,500,Diario,637.81,"En curso",2017-08-03,1.2802631578947,18487,399,10,159
+2017-08-01,2017-08-05,"(AR) N1_Jujuy",active,475,actions:link_click,13781,1.1234736842105,250,Diario,533.65,"En curso",2017-08-03,1.3231986067774,18235,427,5,162
+2017-08-01,2017-08-05,(AR)_Valle_Cercano_CBA,active,691,actions:link_click,27654,1.4375397973951,1000,Diario,993.34,"En curso",2017-08-04,1.0916684747234,30189,622,9,247
+2017-08-01,2017-08-05,(AR)_Valle_Cercano_Ushuaia,active,67,actions:link_click,4113,3.1888059701493,500,Diario,213.65,"En curso",2017-08-05,1.1118405057136,4573,62,,28

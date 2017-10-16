@@ -5,8 +5,7 @@ from campaign.models import *
 admin.site.register(Campaign)
 admin.site.register(StatusCampaign)
 admin.site.register(Working)
-admin.site.register(WaitingPay)
-admin.site.register(Pay)
 admin.site.register(End)
+admin.site.register(Delete)
 
 

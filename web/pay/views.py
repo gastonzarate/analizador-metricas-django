@@ -6,9 +6,8 @@ from django.views.decorators.csrf import csrf_exempt
 from django.views.generic import TemplateView
 import mercadopago
 import json
-from pay.models import Customer, Premium
 import os
-from campaign.models import Campaign, Pay
+from campaign.models import Campaign
 
 
 class HomePayView(TemplateView):

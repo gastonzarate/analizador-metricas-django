@@ -1,0 +1,37 @@
+[
+  {
+    "model":"campaign.socialnetwork",
+    "fields":{
+        "name":"Facebook"
+    },
+    "pk":1
+  },
+  {
+    "model":"campaign.socialnetwork",
+    "fields":{
+        "name":"Google GND"
+    },
+    "pk":2
+  },
+  {
+    "model":"campaign.socialnetwork",
+    "fields":{
+        "name":"Google Search"
+    },
+    "pk":3
+  },
+  {
+    "model":"campaign.socialnetwork",
+    "fields":{
+        "name":"Twitter"
+    },
+    "pk":4
+  },
+  {
+    "model":"campaign.socialnetwork",
+    "fields":{
+        "name":"Otro"
+    },
+    "pk":5
+  }
+]

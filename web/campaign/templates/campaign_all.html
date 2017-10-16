@@ -3,6 +3,9 @@
 {%block head%}
     {{block.super}}
     <link href="{% static 'inspinia2/css/plugins/dataTables/datatables.min.css' %}" rel="stylesheet">
+    <!-- Sweet Alert -->
+    <link href="{% static 'inspinia2/css/plugins/sweetalert/sweetalert.css' %}" rel="stylesheet">
+
 {%endblock%}
 
 {% block here %}Mis Campañas{% endblock %}
@@ -21,8 +24,41 @@ active
                 <div class="col-lg-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <div class="ibox-tools">
-                            <a href="{% url 'campaign_new' %}"><button class="btn btn-success btn-circle btn-md"><i class="fa fa-plus"></i></button></a>
+                        <div class="row">
+                            <div class="col-xs-2 col-xs-offset-2 text-center">
+                                <small>Nueva</small>
+                            </div>
+                            <div class="col-xs-2 text-center">
+                                <small>Editar</small>
+                            </div>
+                            <div class="col-xs-2 text-center">
+                                <small>Eliminar</small>
+                            </div>
+                            <div class="col-xs-2 text-center">
+                                <small>Métricas</small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2 col-xs-offset-2 text-center">
+                                <button class="btn btn-success btn-md" id="btn-new">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="col-xs-2 text-center">
+                                    <button class="btn btn-success btn-md" id="btn-edit">
+                                        <i class="fa fa-edit"></i>
+                                    </button>
+                            </div>
+                            <div class="col-xs-2 text-center">
+                                <button class="btn btn-success btn-md" id="btn-delete">
+                                    <i class="fa fa-times"></i>
+                                </button>
+                            </div>
+                            <div class="col-xs-2 text-center">
+                                <button class="btn btn-success btn-md" id="btn-metrics">
+                                    <i class="fa fa-pie-chart"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div class="ibox-content">
@@ -31,32 +67,32 @@ active
                     <table class="table table-striped table-bordered table-hover dataTables-example" >
                     <thead>
                     <tr>
+                        <th></th>
                         <th>Nombre</th>
                         <th>Presupuesto</th>
                         <th>Gastado</th>
                         <th>Estado</th>
-                        <th>Metricas</th>
                     </tr>
                     </thead>
                     <tbody>
                     {% for camp in campaings %}
                         <tr>
+                            <td><input type="radio" name="camp_id" id="{{camp.id}}"></td>
                             <td><strong>{{camp.get_name}}</strong></td>
                             <td>${{camp.get_budget}}</td>
                             <td>${{camp.get_budget_spent}}</td>
                             <td>{{camp.get_status_obj}}</td>
-                            <td><a href="{% url 'campaign_metrics' campaign_id=camp.id %}"><button class="btn btn-default">Ver</button></a></td>
                         </tr>
                     {% endfor %}
                     </tbody>
                     {% if footer %}
                     <tfoot>
                         <tr>
+                            <th></th>
                             <th>Nombre</th>
                             <th>Presupuesto</th>
                             <th>Gastado</th>
                             <th>Estado</th>
-                            <th>Metricas</th>
                         </tr>
                     </tfoot>
                     {% endif%}
@@ -72,6 +108,9 @@ active
 {% endblock %}
 
 {% block javascript_custom %}
+	<!-- Sweet alert -->
+	<script src="{% static 'inspinia2/js/plugins/sweetalert/sweetalert.min.js' %}"></script>
+
     <script src="{% static 'inspinia2/js/plugins/dataTables/datatables.min.js' %}"></script>
     <!-- Page-Level Scripts -->
     <script>
@@ -103,5 +142,73 @@ active
         });
 
     </script>
+<script>
+    $(document).ready(function(){
+    	$("#btn-new").click(function(){
+		   location.href ="{% url 'campaign_new' %}";
+    	});
+
+    	$("#btn-edit").click(function(){
+		   let id = $("input:radio[name=camp_id]:checked").attr("id");
+		   location.href ="{% url 'campaign_edit' %}?camp_id="+id;
+    	});
+
+
+    	$("#btn-metrics").click(function(){
+		   let id = $("input:radio[name=camp_id]:checked").attr("id");
+		   location.href ="{% url 'campaign_metrics' %}?camp_id="+id;
+    	});
+
+    	$("#btn-delete").click(function(){
+    		let id = $("input:radio[name=camp_id]:checked").attr("id");
+    		if(id){
+    		    swal({
+	                title: "¿Estas seguro?",
+	                text: "No podrá recuperar esta campaña!",
+	                type: "warning",
+	                showCancelButton: true,
+	                confirmButtonColor: "#DD6B55",
+	                confirmButtonText: "Si, borralo!",
+	                cancelButtonText: "Cancelar!",
+	                closeOnConfirm: false,
+	                closeOnCancel: false,
+	            }, function (isConfirm) {
+	                if(isConfirm){
+	                    deleteCampaign(id);
+	                }else{
+	                    swal("Cancelado", "Su campaña no se ha borrado :)", "error");
+	                }
+	            });
+	        }else{
+	            swal({
+	        		title:"Debe seleccionar una campaña",
+    				text:"La campaña que desea eliminar."
+    		    });
+	        }
+    	});
+
+
+    	function deleteCampaign(id){
+			let request	= $.ajax({
+				type:"GET",
+				url:"{% url 'delete_campaign' %}",
+				data:{
+					"camp_id":id,
+				},
+			});
+			request.done(function(response){
+				console.log(response.success);
+				if(response.success===true){
+					 $('#'+id).parent().parent().remove();
+					swal("Borrado!","Se ha eliminado tu campaña correctamente.","success");
+				}else{
+					swal("Error","No hemos podido eliminar tu campaña, intentalo nuevamente","error");
+				}
+			});
+    	};
+        
+    });
+
+</script>
 
 {% endblock %}

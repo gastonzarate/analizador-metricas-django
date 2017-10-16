@@ -44,10 +44,11 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     #Aplicaciones propias
     'accounts',
-    'campaign',
-    'metrics',
-    'home',
-    'pay',
+    'analytics',
+    # 'campaign',
+    # 'metrics',
+    # 'home',
+    # 'pay',
     #django-analytical
     'analytical',
     # Login social

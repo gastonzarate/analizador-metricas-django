@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="65af67d3-d9a6-4d28-ba79-b4d252380aa5" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/accounts/migrations/0002_auto_20170613_1637.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/campaign/fixtures/type.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/campaign/migrations/0002_auto_20170613_2355.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/campaign/templates/campaign_metrics.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/configurations/static/home/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/configurations/static/inspinia2/css/animate.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/configurations/static/inspinia2/css/style_landing.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/configurations/static/inspinia2/img/avatar1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/configurations/static/inspinia2/img/avatar2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/configurations/static/inspinia2/img/avatar3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/configurations/static/inspinia2/img/avatar4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/configurations/static/inspinia2/img/avatar5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/configurations/static/inspinia2/img/avatar6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/configurations/static/inspinia2/img/avatar7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/configurations/static/inspinia2/img/avatar8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/configurations/static/inspinia2/img/avatar9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/configurations/static/inspinia2/img/avatar_all.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/configurations/static/inspinia2/img/dashboard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/configurations/static/inspinia2/img/header_one.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/configurations/static/inspinia2/img/header_two.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/configurations/static/inspinia2/img/iphone.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/configurations/static/inspinia2/img/laptop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/configurations/static/inspinia2/img/perspective.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/configurations/static/inspinia2/img/shattered.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/configurations/static/inspinia2/img/word_map.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/configurations/static/inspinia2/js/demo/peity-demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/configurations/static/metrics/js/get_campaign.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/configurations/static/pay/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/home/templates/home_index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/metrics/templates/metrics_csv.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSV/Ad Performance Facebook Complete.xlsx" afterPath="$PROJECT_DIR$/CSV/Ad Performance Facebook Complete.xlsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSV/Reserve Today LTV &amp; CAC Lesson Complete.xls" afterPath="$PROJECT_DIR$/CSV/Reserve Today LTV &amp; CAC Lesson Complete.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/fonts/Arimo-Bold.ttf" afterPath="$PROJECT_DIR$/web/configurations/static/home/fonts/Arimo-Bold.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/fonts/Arimo-BoldItalic.ttf" afterPath="$PROJECT_DIR$/web/configurations/static/home/fonts/Arimo-BoldItalic.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/fonts/Arimo-Italic.ttf" afterPath="$PROJECT_DIR$/web/configurations/static/home/fonts/Arimo-Italic.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/fonts/Arimo-Regular.ttf" afterPath="$PROJECT_DIR$/web/configurations/static/home/fonts/Arimo-Regular.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/fonts/LeagueSpartan-Bold.otf" afterPath="$PROJECT_DIR$/web/configurations/static/home/fonts/LeagueSpartan-Bold.otf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/fonts/OpenSans-Bold.ttf" afterPath="$PROJECT_DIR$/web/configurations/static/home/fonts/OpenSans-Bold.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/fonts/OpenSans-BoldItalic.ttf" afterPath="$PROJECT_DIR$/web/configurations/static/home/fonts/OpenSans-BoldItalic.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/fonts/OpenSans-ExtraBold.ttf" afterPath="$PROJECT_DIR$/web/configurations/static/home/fonts/OpenSans-ExtraBold.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/fonts/OpenSans-ExtraBoldItalic.ttf" afterPath="$PROJECT_DIR$/web/configurations/static/home/fonts/OpenSans-ExtraBoldItalic.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/fonts/OpenSans-Italic.ttf" afterPath="$PROJECT_DIR$/web/configurations/static/home/fonts/OpenSans-Italic.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/fonts/OpenSans-Light.ttf" afterPath="$PROJECT_DIR$/web/configurations/static/home/fonts/OpenSans-Light.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/fonts/OpenSans-LightItalic.ttf" afterPath="$PROJECT_DIR$/web/configurations/static/home/fonts/OpenSans-LightItalic.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/fonts/OpenSans-Regular.ttf" afterPath="$PROJECT_DIR$/web/configurations/static/home/fonts/OpenSans-Regular.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/fonts/OpenSans-Semibold.ttf" afterPath="$PROJECT_DIR$/web/configurations/static/home/fonts/OpenSans-Semibold.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/fonts/OpenSans-SemiboldItalic.ttf" afterPath="$PROJECT_DIR$/web/configurations/static/home/fonts/OpenSans-SemiboldItalic.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/Icono_1.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/Icono_1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/Icono_2.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/Icono_2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/Icono_3.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/Icono_3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/Icono_4.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/Icono_4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/Imagen_principal.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/Imagen_principal.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/amway.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/amway.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/codiLogo.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/codiLogo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/gaston.jpg" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/gaston.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/herbalife.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/herbalife.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/1.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/10.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/10.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/11.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/11.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/12.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/12.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/13.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/13.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/14.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/14.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/15.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/15.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/16.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/16.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/17.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/17.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/18.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/18.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/19.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/19.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/2.jpg" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/20.jpg" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/20.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/21.jpg" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/21.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/22.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/22.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/23.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/23.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/24.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/24.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/25.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/25.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/3.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/4.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/5.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/6.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/6.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/7.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/7.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/8.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/8.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/9.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/Amway_logo.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/Amway_logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/Logo Tupperware.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/Logo Tupperware.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/Primero.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/Primero.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/segundo.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/segundo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/tercero.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/integraciones/tercero.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/javier.jpg" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/javier.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/libro.jpg" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/libro.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/logo.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/samir.jpg" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/samir.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/img/tupperware.png" afterPath="$PROJECT_DIR$/web/configurations/static/home/img/tupperware.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dockerfile" afterPath="$PROJECT_DIR$/Dockerfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/.idea/misc.xml" afterPath="$PROJECT_DIR$/web/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/.idea/project.iml" afterPath="$PROJECT_DIR$/web/.idea/project.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/accounts/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/web/accounts/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/accounts/models.py" afterPath="$PROJECT_DIR$/web/accounts/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/campaign/admin.py" afterPath="$PROJECT_DIR$/web/campaign/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/campaign/fixtures/status_campaign.json" afterPath="$PROJECT_DIR$/web/campaign/fixtures/status_campaign.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/campaign/forms.py" afterPath="$PROJECT_DIR$/web/campaign/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/campaign/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/web/campaign/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/campaign/models.py" afterPath="$PROJECT_DIR$/web/campaign/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/campaign/templates/campaign_all.html" afterPath="$PROJECT_DIR$/web/campaign/templates/campaign_all.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/campaign/templates/campaign_metrics_all.html" afterPath="$PROJECT_DIR$/web/campaign/templates/campaign_metrics_all.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/campaign/templates/campaign_new.html" afterPath="$PROJECT_DIR$/web/campaign/templates/campaign_new.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/campaign/urls.py" afterPath="$PROJECT_DIR$/web/campaign/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/campaign/views.py" afterPath="$PROJECT_DIR$/web/campaign/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/settings/base.py" afterPath="$PROJECT_DIR$/web/configurations/settings/base.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/settings/production.py" afterPath="$PROJECT_DIR$/web/configurations/settings/production.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/css/estilo.css" afterPath="$PROJECT_DIR$/web/configurations/static/home/css/estilo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/css/magnific-popup.css" afterPath="$PROJECT_DIR$/web/configurations/static/home/css/magnific-popup.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/js/inicio.js" afterPath="$PROJECT_DIR$/web/configurations/static/home/js/inicio.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/home/js/jquery.magnific-popup.js" afterPath="$PROJECT_DIR$/web/configurations/static/home/js/jquery.magnific-popup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/inspinia2/css/plugins/ionRangeSlider/ion.rangeSlider.skinNice.css" afterPath="$PROJECT_DIR$/web/configurations/static/inspinia2/css/plugins/ionRangeSlider/ion.rangeSlider.skinNice.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/inspinia2/css/plugins/ionRangeSlider/ion.rangeSlider.skinSimple.css" afterPath="$PROJECT_DIR$/web/configurations/static/inspinia2/css/plugins/ionRangeSlider/ion.rangeSlider.skinSimple.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/static/inspinia2/css/plugins/summernote/summernote-bs3.css" afterPath="$PROJECT_DIR$/web/configurations/static/inspinia2/css/plugins/summernote/summernote-bs3.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/configurations/urls.py" afterPath="$PROJECT_DIR$/web/configurations/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/home/templates/index.html" afterPath="$PROJECT_DIR$/web/home/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/metrics/ajax.py" afterPath="$PROJECT_DIR$/web/metrics/ajax.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/metrics/forms.py" afterPath="$PROJECT_DIR$/web/metrics/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/metrics/templates/metrics.html" afterPath="$PROJECT_DIR$/web/metrics/templates/metrics.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/metrics/templates/metrics_select.html" afterPath="$PROJECT_DIR$/web/metrics/templates/metrics_select.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/metrics/urls.py" afterPath="$PROJECT_DIR$/web/metrics/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/metrics/views.py" afterPath="$PROJECT_DIR$/web/metrics/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/pay/views.py" afterPath="$PROJECT_DIR$/web/pay/views.py" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="30" />
+    <option name="width" value="1366" />
+    <option name="height" value="738" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="65af67d3-d9a6-4d28-ba79-b4d252380aa5" name="Default" comment="" />
+      <created>1502477210937</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1502477210937</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="30" width="1366" height="738" extended-state="0" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+</project>
